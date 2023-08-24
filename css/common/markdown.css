@@ -82,11 +82,13 @@
   position: relative;
   box-sizing: border-box;
   padding-top: 0.4rem;
+  padding-bottom: 0.2rem;
   overflow: hidden;
   color: var(--text-color-2);
   line-height: 1.5;
   white-space: nowrap;
   text-overflow: ellipsis;
+  border-bottom: 1px solid var(--post-h-bottom-border-color);
 keep-tablet()
 }
 .keep-markdown-body h1:hover a.headerlink,
@@ -168,10 +170,11 @@ keep-tablet()
   display: block;
   box-sizing: border-box;
   max-width: 100%;
+  margin: var(--post-img-align);
+  margin-bottom: 2rem;
   box-shadow: 0 0 0.2rem var(--shadow-color);
   cursor: zoom-in;
   opacity: 1;
-  margin: 0.8rem 0 0.2rem;
 }
 .keep-markdown-body img.hide {
   opacity: 0;

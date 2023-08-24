@@ -70,8 +70,13 @@ keep-mobile()
   top: calc(var(--header-height) + $component-spacing-value);
   box-sizing: border-box;
   opacity: 0;
-  left: calc((100vw - $content-max-width / 2) - 5rem);
 keep-tablet()
+}
+.page-container .post-tools.right-toc {
+  left: calc((100vw - $content-max-width / 2) - 5rem);
+}
+.page-container .post-tools.left-toc {
+  right: calc((100vw - $content-max-width / 2) - 5rem);
 }
 .header-shrink .page-container .post-tools {
   top: calc(var(--header-shrink-height) + $component-spacing-value);

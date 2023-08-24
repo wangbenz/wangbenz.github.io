@@ -189,11 +189,16 @@ keep-tablet()
   top: calc(var(--header-height) + $component-spacing-value);
   display: none;
   flex-shrink: 0;
-  order: 1;
   box-sizing: border-box;
   width: 15rem;
   max-height: calc(100vh - calc(var(--header-height) + $component-spacing-value));
   padding: 2rem 0 2rem 1.4rem;
+}
+.post-page-container .pc-post-toc.right-toc {
+  order: 1;
+}
+.post-page-container .pc-post-toc.left-toc {
+  order: -1;
 }
 .header-shrink .post-page-container .pc-post-toc {
   top: calc(var(--header-shrink-height) + $component-spacing-value);
